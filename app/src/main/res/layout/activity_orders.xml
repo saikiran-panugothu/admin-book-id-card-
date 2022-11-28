@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="40dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+      <TextView
+          android:layout_width="300dp"
+          android:textStyle="bold"
+          android:textColor="@color/black"
+          android:layout_height="wrap_content"
+          android:layout_marginVertical="10dp"
+          android:id="@+id/user"/>
+      <LinearLayout
+          android:layout_width="370dp"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Printed"
+              android:textSize="10sp"
+              android:visibility="invisible"
+              android:id="@+id/printedbtn"/>
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Delivered"
+              android:textSize="10sp"
+              android:visibility="invisible"
+              android:id="@+id/deliveredbtn"/>
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="completed"
+              android:textSize="10sp"
+              android:visibility="invisible"
+              android:id="@+id/completedbtn"/>
+      </LinearLayout>
+  </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
